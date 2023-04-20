@@ -1,3 +1,5 @@
+
+
 const Banner = () => {
     const rectangles = Array.from({ length: 20 }, (_, index) => <div key={index} id='rectangle'></div>);
   

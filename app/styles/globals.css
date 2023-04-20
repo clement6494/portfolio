@@ -99,8 +99,10 @@ h2 {
 }
 
 #rectangle {
-  width: 80%;
-  padding: 17px;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-bottom: 30px;
   background: rgb(var(--yellow));
   
@@ -139,11 +141,13 @@ h2 {
 }
 
 #parallelogram{
-  
-  height: 80%;
+
+
+
   transform: skew(-45deg);
   background: rgb(var(--yellow));
-  padding: 25px;
+  padding-bottom: 4rem;
+  padding-left: 3rem;
   margin-left: 40px;
 
 }
