@@ -11,17 +11,21 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div>
-    <Header> </Header>
-    <main className="wrapper">
-      <Banner_top></Banner_top>
+      <Header> </Header>
+      <main className="wrapper">
+        <Banner_top></Banner_top>
+        
+        <div className="border">
+          <div className='triangle-top'></div>
+          <h2 className='title'>My Projects: </h2>
+          <div className='triangle-bot'></div>
+        </div>
+          
+        
 
-
-
-      
-
+        
+      </main>
       <Banner> </Banner>
-    </main>
-
     </div>
   )
 }
