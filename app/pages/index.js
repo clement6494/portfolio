@@ -9,6 +9,8 @@ import Banner_top from '../components/Banner_top'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const dots = Array.from({ length: 27 }, () => <div id='dots'></div>);
   return (
     <div>
       <Header> </Header>
@@ -21,6 +23,9 @@ export default function Home() {
           <div className='triangle-bot'></div>
         </div>
           
+        <div className="panel">
+            {dots}
+        </div>  
         
 
         
