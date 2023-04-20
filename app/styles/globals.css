@@ -115,7 +115,7 @@ body {
 .banner_top{
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   
@@ -126,9 +126,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
+  border-color: rgb(var(--yellow));
+  border-width: 2px;
 }
 
 .banner_top#parallelogram{
- 
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid rgb(var(--yellow));
+  transform: skew(-45deg);
 
 }
