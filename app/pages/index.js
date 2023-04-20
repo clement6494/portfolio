@@ -10,8 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const dots = Array.from({ length: 27 }, () => <div id='dots'></div>);
-  return (
+  const dots = Array.from({ length: 27 }, (_, index) => <div key={index} id='dots'></div>);  return (
     <div>
       <Header> </Header>
       <main className="wrapper">
@@ -24,7 +23,11 @@ export default function Home() {
         </div>
           
         <div className="panel">
-            {dots}
+          {dots.map((dot, index) => (
+            <div key={index}>
+              {dot}
+            </div>
+          ))}
         </div>  
         
 
