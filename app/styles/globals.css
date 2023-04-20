@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --yellow: 244, 208, 100;
+  --light-yellow: 244, 208, 160;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +16,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --yellow: 244, 208, 65;
+    --light-yellow: 244, 208, 120;
+
   }
 }
 
@@ -24,4 +30,34 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.title {
+  
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(var(--light-yellow));
+}
+
+#banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 150px;
+  height: 300px;
+  transform: skew(45deg);
+  border-width: 2px;
+  border-color: rgb(var(--yellow));
+
 }
