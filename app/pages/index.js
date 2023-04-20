@@ -1,15 +1,27 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Header  from '../components/Header'
+import Banner from '../components/Banner'
+import Banner_top from '../components/Banner_top'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    <div>
+    <Header> </Header>
     <main className="wrapper">
-      <h1 className="title">CONCHEZ Clément</h1>
-      <div id='banner' > banner </div>
+      <Banner_top></Banner_top>
 
 
+
+      
+
+      <Banner> </Banner>
     </main>
+
+    </div>
   )
 }
