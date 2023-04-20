@@ -74,7 +74,7 @@ body {
 #banner {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: -150px;
   z-index: 99;
   background: linear-gradient(
       to bottom,
@@ -83,7 +83,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   width: 150px;
-  height: 300px;
+  height: 50%;
   transform: skew(45deg);
   border-width: 2px;
   border-color: rgb(var(--yellow));
@@ -97,7 +97,8 @@ body {
 
 #rectangle {
   width: 80%;
-  height: 10%;
+  padding: 25px;
+  margin-bottom: 40px;
   background: rgb(var(--yellow));
   
 }
@@ -113,7 +114,7 @@ body {
 
 
 #banner_top{
-  width: 100%;
+  width: 120%;
   height: 100px;
   z-index: 99;
   display: flex;

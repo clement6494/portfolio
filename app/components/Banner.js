@@ -1,17 +1,16 @@
 const Banner = () => {
 
 
+        const rectangles = Array.from({ length: 20 }, () => <div id='rectangle'></div>);
+      
+
+
+
 
     return (
-        <div id='banner' > 
-            <div id='rectangle' > </div>
-            <div id='rectangle' > </div>
-            <div id='rectangle' > </div>
-            <div id='rectangle' > </div>
-            <div id='rectangle' > </div>
-            <div id='rectangle' > </div>
-        
-         </div>
+        <div id='banner'>
+            {rectangles}
+        </div>
     )
 }
 
